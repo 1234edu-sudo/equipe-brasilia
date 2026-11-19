@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Recrutamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>RECRUTAMENTO</h1>
+        <p>Sistema de seleção da equipe</p>
+    </header>
+
+    <main>
+        <section id="login">
+            <h2>Acesso ao sistema</h2>
+
+            <input type="text" id="usuario" placeholder="Seu usuário">
+            <input type="password" id="senha" placeholder="Sua senha">
+
+            <button onclick="entrar()">Entrar</button>
+            <p id="mensagem"></p>
+        </section>
+
+        <section id="painel" hidden>
+            <h2>Painel de recrutamento</h2>
+
+            <h3>Cadastrar candidato</h3>
+            <input id="nome" placeholder="Nome do candidato">
+            <textarea id="informacoes" placeholder="Informações e habilidades"></textarea>
+            <button onclick="cadastrar()">Cadastrar</button>
+
+            <h3>Candidatos cadastrados</h3>
+            <div id="lista"></div>
+
+            <h3>🎲 SORTEIO DOS CONCORRENTES</h3>
+
+            <div id="roleta" class="roleta">
+                <div id="dado">
+                    <div id="cubo">
+                        <div class="face frente"></div>
+                        <div class="face tras"></div>
+                        <div class="face direita"></div>
+                        <div class="face esquerda"></div>
+                        <div class="face cima"></div>
+                        <div class="face baixo"></div>
+                    </div>
+                </div>
+
+                <p id="nomeRoleta">AGUARDANDO SORTEIO</p>
+            </div>
+
+            <button id="botaoSorteio" onclick="sortear()">
+                🎲 INICIAR SORTEIO
+            </button>
+
+            <h3>🏆 VENCEDOR</h3>
+            <div id="resultado"></div>
+
+            <h3>📋 HISTÓRICO DE SORTEADOS</h3>
+            <div id="historico"></div>
+
+
+
+
+            <script src="script.js"></script>
+</body>
+
+</html>
