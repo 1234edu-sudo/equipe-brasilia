@@ -1,1 +1,20 @@
 
+{
+  "name": "Equipe Brasília",
+  "short_name": "Equipe Brasília",
+  "description": "Aplicativo de recrutamento da Equipe Brasília",
+  "start_url": "/equipe-brasilia/",
+  "scope": "/equipe-brasilia/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#101827",
+  "theme_color": "#101827",
+  "icons": [
+    {
+      "src": "/equipe-brasilia/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
+
