@@ -70,6 +70,17 @@
 
 
             <script src="script.js"></script>
+            
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/equipe-brasilia/service-worker.js")
+      .then(() => console.log("Aplicativo Equipe Brasília ativado!"))
+      .catch(error => console.error("Erro ao ativar:", error));
+  });
+}
+</script>
+
 </body>
 
 </html>
